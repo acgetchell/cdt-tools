@@ -1,0 +1,7 @@
+# cdt-tools
+
+Tools to use CDT in Rust.
+
+## Requirements
+
+- openblas
