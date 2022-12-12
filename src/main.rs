@@ -1,3 +1,7 @@
+extern crate blas;
+extern crate lapack;
+extern crate openblas_src;
+
 use plotpy::Plot;
 use tritet::{StrError, Tetgen};
 
