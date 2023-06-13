@@ -1,6 +1,6 @@
 extern crate blas;
 extern crate lapack;
-extern crate openblas_src;
+extern crate blas_src;
 
 use plotpy::Plot;
 use tritet::{StrError, Tetgen};
@@ -23,7 +23,7 @@ fn main() -> Result<(), StrError> {
     tetgen.generate_delaunay(false)?;
 
     // draw edges of tetrahedra
-    let mut plot = Plot::new();
+    let _plot = Plot::new();
 
     Ok(())
 }
