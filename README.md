@@ -4,11 +4,6 @@
 
 ## Requirements
 
-- openblas
-- lapack
-
-Both via [openblas-src].
-
+- Python3
 
 [tritet]: https://docs.rs/tritet/latest/tritet/
-[openblas-src]: https://github.com/blas-lapack-rs/blas-lapack-rs.github.io/wiki
