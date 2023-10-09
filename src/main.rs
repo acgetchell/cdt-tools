@@ -1,3 +1,4 @@
+use plotpy::Plot;
 use tritet::{StrError, Tetgen};
 
 fn main() -> Result<(), StrError> {
@@ -17,5 +18,20 @@ fn main() -> Result<(), StrError> {
 
     // generate Delaunay triangulation
     tetgen.generate_delaunay(false)?;
+
+    // draw figure
+    let mut plot = Plot::new();
+    tetgen.draw_wireframe(
+        &mut plot, true, // set_range
+        true, // with_point_ids
+        true, // with_triangle_ids
+        true, // with_attribute_ids
+        None, // fontsize_point_ids
+        None, // fontsize_triangle_ids
+        None, // fontsize_attribute_ids
+    );
+
+    // save figure
+    plot.save("/tmp/tetgen-delaunay-1.svg")?;
     Ok(())
 }
