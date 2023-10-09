@@ -6,4 +6,6 @@
 
 - Python3
 
+![Delaunay triangulation of a 3D point set](tetgen-delaunay-1.svg)
+
 [tritet]: https://docs.rs/tritet/latest/tritet/
