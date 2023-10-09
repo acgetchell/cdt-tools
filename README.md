@@ -1,4 +1,4 @@
-# rust-tritet
+# try-rust-tritet
 
 2D & 3D Delaunay triangulations in Rust using [tritet].
 
