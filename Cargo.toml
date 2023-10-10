@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tritet = "0.3"
+tritet = "0.3.1"
 plotpy = "0.5"
